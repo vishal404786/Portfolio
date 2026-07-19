@@ -1115,10 +1115,10 @@
         <div class="label" contenteditable="false" id="contactLabelGithub">GitHub</div>
         <a class="val" contenteditable="false" id="contactGithub" href="#" target="_blank" rel="noopener">github.com/vishal-s</a>
       </div>
-     <div class="contact-item" data-open="link">
-        <div class="label" contenteditable="false" id="contactLabelKaggle">Kaggle</div>
-        <a class="val" contenteditable="false" id="contactKaggle" href="#" target="_blank" rel="noopener">kaggle.com/vishal-s</a>
-      </div>
+ <div class="contact-item" data-open="link">
+  <div class="label" contenteditable="false" id="contactLabelKaggle">Instagram</div>
+  <a class="val" contenteditable="false" id="contactKaggle" href="#" target="_blank" rel="noopener">instagram.com/vishal.s</a>
+ </div>
     </div>
     <div style="margin-top:16px;">
       <button class="add-skill" id="addContactBtn">+ Add contact</button>
@@ -1245,13 +1245,13 @@
     contactLabelLocation: 'Location',
     contactLabelLinkedin: 'LinkedIn',
     contactLabelGithub: 'GitHub',
-    contactLabelKaggle: 'Kaggle',
+    contactLabelKaggle: 'Instagram',
     contactEmail: 'vishal404041@gmail.com',
     contactPhone: '+91 96296 13897',
     contactLocation: 'Tamil Nadu, India',
     contactLinkedin: 'linkedin.com/in/vishal-s',
     contactGithub: 'github.com/vishal404786',
-    contactKaggle: 'kaggle.com/in/vishal-s',
+    contactKaggle: 'https://www.instagram.com/blackdevil404.v?igsh=MWY5OTNicmZ4b3Vnbw==',
     extraContacts: [],
     footerName: 'Vishal S',
     footerTagline: '786',
@@ -1474,9 +1474,9 @@
       return 'https://github.com/' + user;
     }
     if(kind === 'kaggle'){
-      var kuser = t.replace(/^kaggle\.com\//i, '');
-      return 'https://www.kaggle.com/' + kuser;
-    }
+  var kuser = t.replace(/^instagram\.com\//i, '').replace(/^@/, '');
+  return 'https://www.instagram.com/' + kuser;
+  }
     return '#';
   }
 
