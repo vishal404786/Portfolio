@@ -1118,8 +1118,8 @@
         <a class="val" contenteditable="false" id="contactGithub" href="#" target="_blank" rel="noopener">github.com/vishal-s</a>
       </div>
  <div class="contact-item" data-open="link">
-  <div class="label" contenteditable="false" id="contactLabelKaggle">Instagram</div>
-  <a class="val" contenteditable="false" id="contactKaggle" href="#" target="_blank" rel="noopener">instagram.com/vishal.s</a>
+  <div class="label" contenteditable="false" id="contactLabelKaggle">WhatsApp</div>
+  <a class="val" contenteditable="false" id="contactKaggle" href="#" target="_blank" rel="noopener">+91 96296 13897</a>
  </div>
     </div>
     <div style="margin-top:16px;">
@@ -1249,9 +1249,9 @@
     contactLabelLocation: 'Location',
     contactLabelLinkedin: 'LinkedIn',
     contactLabelGithub: 'GitHub',
-    contactLabelKaggle: 'Instagram',
+    contactLabelKaggle: 'WhatsApp',
     contactEmail: 'vishal404041@gmail.com',
-    contactPhone: '+91 96296 13897',
+    contactPhone: '+919629613897',
     contactLocation: 'Tamil Nadu, India',
     contactLinkedin: 'linkedin.com/in/vishal-s',
     contactGithub: 'vishal404786',
@@ -1484,9 +1484,9 @@
       return 'https://github.com/' + user;
     }
     if(kind === 'kaggle'){
-  var kuser = t.replace(/^instagram\.com\//i, '').replace(/^@/, '');
-  return 'https://www.instagram.com/' + kuser;
-  }
+  var wnum = t.replace(/[^0-9]/g, '');
+  return 'https://wa.me/' + wnum;
+        }
     return '#';
   }
 
